@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>결제 페이지</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            width: 800px;
+            
+        }
+
+        .container {
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .div1,
+        .div2,
+        .div3,
+        .div4 {
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .div1 {
+            order: 1;
+        }
+
+        .div2 {
+            order: 2;
+        }
+
+        .div3 {
+            order: 3;
+        }
+
+        .div4 {
+            order: 5;
+        }
+        .div5{
+            order:4;
+        }
+
+        .div4 button {
+            font-size: 16px;
+            background-color: #ffce00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+
+        .div4 button:hover {
+            background-color: #ffb300;
+        }
+
+        .payment-options {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-options label {
+            margin-right: 10px;
+        }
+        h2{
+            color: #0C00A5;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            <!-- 상품정보 -->
+            상품정보
+        </div>
+        <div class="div2">
+            <!-- 멘토 정보와 프로그램 정보 -->
+            <h2>멘토 정보</h2>
+            <img src="" alt="멘토 사진">
+            <p>멘토 이름: leemingyun</p>
+            <p>프로그램 정보: TODO </p>
+        </div>
+        <div class="div3">
+            <!-- 결제 금액 -->
+            <h2>결제 금액</h2>
+            <p style="display: flex; justify-content: space-between;">결제금액: 0000원</p>
+        </div>
+        <div class="div5">
+            <!-- 결제 수단 선택 -->
+            <h2>결제 수단 선택</h2>
+            <div class="payment-options">
+                <label>
+                    <input type="checkbox" name="paymentMethod" value="toss"> Toss Pay
+                </label>
+                <label>
+                    <input type="checkbox" name="paymentMethod" value="kakao"> 카카오Pay
+                </label>
+                <label>
+                    <input type="checkbox" name="paymentMethod" value="naver"> 네이버Pay
+                </label>
+            </div>
+        </div>
+        <div class="div4">
+            <!-- 결제하기 버튼 -->
+            <button>결제하기</button>
+        </div>
+    </div>
+</body>
+
+</html>

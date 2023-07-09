@@ -1,0 +1,95 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>회원 가입 화면</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 630px; /* 수정된 부분: 가로 길이 1.5배로 변경 */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid purple;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 200px;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input-container input {
+            border: 1px solid purple;
+            border-radius: 10px;
+            padding: 12px;
+            width: 100%;
+            max-width: 600px; /* 수정된 부분: 가로 길이 1.5배로 변경 */
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 20px; /* 왼쪽 padding 추가 */
+        }
+
+        .checkbox-label {
+            font-size: 14px;
+        }
+
+        .terms-details {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .terms-details p {
+            font-size: 12px;
+        }
+
+        .checkbox-input:checked~.terms-details {
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" placeholder="이름">
+            <input type="email" placeholder="이메일">
+            <input type="password" placeholder="비밀번호">
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="terms-checkbox" class="checkbox-input">
+            <label for="terms-checkbox" class="checkbox-label">이용약관 동의</label>
+            <div class="terms-details">
+                <p>이용약관 상세 내용을 보여주는 부분입니다.</p>
+            </div>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="privacy-checkbox" class="checkbox-input">
+            <label for="privacy-checkbox" class="checkbox-label">개인정보수집 및 이용동의</label>
+            <div class="terms-details">
+                <p>개인정보수집 및 이용동의 상세 내용을 보여주는 부분입니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

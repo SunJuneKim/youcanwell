@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>메인 화면</title>
+    <style>
+        body {
+            margin: 150px auto;
+            /* 상단 간격 150px, 가운데 정렬 */
+            padding: 0;
+            width: 850px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;         /* 세로 가운데 정렬 */
+        }
+
+        .header {
+            margin-top: 150px;
+            display: flex;
+            width: 100%;
+            height: 40px;
+        }
+
+        .div1 {
+            flex: 7;
+            background-color: #FFCE00;
+        }
+
+        .div2 {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0C00A5;
+            font-size: 25px;
+        }
+
+        .div2 img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-item {
+            margin: 0 2px;
+            background-color: #0C00A5;
+            width: 75px;
+            height: 75px;
+            font-size: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+        .content-item:last-child {
+            background-color: #FFCE00;
+        }
+
+        .content2 {
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(3, 150px);
+            gap: 5px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .content2-item {
+            background-color: #0C00A5;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        section {
+            border: 5px solid #0C00A5;
+            padding: 55px;
+            margin-top: 80px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <div class="header">
+        <div class="div1"></div>
+        <div class="div2">
+            <a href="mypage.html" style="text-decoration: none;">
+                <img src="icon.png" alt="icon">
+                마이페이지
+            </a>
+        </div>
+    </div>
+    <section>
+        <div class="content">
+            <div class="content-item">유</div>
+            <div class="content-item">캔</div>
+            <div class="content-item">웰</div>
+            <div class="content-item">!</div>
+        </div>
+        <div class="content2">
+            <div class="content2-item">#운동</div>
+            <div class="content2-item">#요리</div>
+            <div class="content2-item">#패션</div>
+            <div class="content2-item">#여행</div>
+            <div class="content2-item">#취미</div>
+            <div class="content2-item">#사람들</div>
+        </div>
+    </section>
+</body>
+
+</html>
